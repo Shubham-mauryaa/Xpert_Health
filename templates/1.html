@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/diseases_style.css">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 50px;
+        }
+        h1 {
+            color: #555;
+            text-align: center;
+            margin-top: 0;
+            font-size: 22px;
+        }
+        h3 {
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size:14px;
+        }
+        p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            margin-left:400px;
+            background-color: #fff;
+            padding: 20px;
+            font-size:14px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    {% block body%}
+    <header class="header">
+    <a href="#" class="logo"><i class="fas fa-heartbeat"></i>HealthXpert</a>
+    <nav class="navbar">
+        <a href="/home">Home</a>
+        <a href="/services">Services</a>
+        <a href="/diseases">Diseases</a>
+        <a href="/symptomchecker">Symptom Checker</a>
+        <a href="/scan">Reports Scanner</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>
+        <ul>
+            <li> Patient Name- Mrs. RAJASHWARI TIWARI</li>
+            <li>Age/ Gender-76 Years. / Female </li>
+            <li>Doctor- Dr. MUFAZZAL AHMAD </li>
+        </p>
+        </ul>
+        <h3>The report indicates that the liver, pancreas, and spleen appear normal, but the gallbladder contains stones,
+            and both kidneys have some stones with swelling in the tubes that carry urine from the kidneys to the
+            bladder. The bladder appears full, and there is a small amount of fluid in the right side of the chest. The
+            impression is cholelithiasis (gallstones), medical renal disease with right renal calculi causing
+            right-sided hydronephrosis (swelling in the kidney due to a stone), and minimal right-sided pleural effusion
+            (a small amount of fluid in the right side of the chest).</h3>
+        <p>
+        <ol>
+            <li>Liver: The liver is normal in size and texture. The porta hepatis (the area where blood vessels and
+                bile ducts enter and exit the liver) appears normal, and there is no blockage of the bile ducts. The
+                portal vein (a large vein that carries blood to the liver) is also normal in size</li>
+            <li>Gallbladder: The gallbladder is distended (enlarged) and contains a few calculi (stones) in its lumen
+                (interior). One of the stones is relatively large (measuring 10.6 mm). However, the walls of the
+                gallbladder appear thin and regular.
+            </li>
+            <li>Common hepatic duct (CHD): The CHD, which carries bile from the liver to the gallbladder and small
+                intestine, appears normal in size and there are no visible stones.</li>
+            <li> Pancreas: The pancreas appears normal in size, shape, and texture. The main pancreatic duct (MPD),
+                which carries digestive enzymes from the pancreas to the small intestine, is not dilated (enlarged).
+                There are no visible calcifications (hard deposits).</li>
+            <li> Spleen: The spleen appears normal in size, shape, and texture. The splenic vein, which drains blood
+                from the spleen, appears normal.</li>
+            <li>Kidneys: Both kidneys appear enlarged and have decreased echogenicity (they appear less bright on the
+                imaging). There are two calculi (stones) in the upper pole of the right kidney, and the pelvicalyceal
+                system (the area where urine collects before draining into the ureters) is dilated in both kidneys. The
+                right kidney measures 12x7 cm and the left kidney measures 11x5.7 cm.
+            </li>
+            <li> Urinary bladder: The urinary bladder appears empty on the imaging, and the bulb of the Foley's catheter
+                (a tube inserted into the bladder to drain urine) is visible.</li>
+        </ol>
+        <blockquote>
+            You need to take rest and don"t forget to take care of your health by taking proper medicine and diet.
+        </blockquote>
+        </p>
+    </div>
+    {% endblock %}
+</body>
+</html>
